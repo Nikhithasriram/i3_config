@@ -13,9 +13,14 @@ return {
           ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "elixir", "heex" , "rust" , "cpp" },
           sync_install = false,
           highlight = { enable = true },
-          indent = { enable = true },  
+          indent = { enable = true },
         })
       vim.keymap.set('n' , '<leader>n' , ':Neotree toggle left<CR>' , {})
+      vim.keymap.set('n' , '<leader>f' , ':Neotree focus<CR>',{})
+
     end
+
  } 
+
+
 
